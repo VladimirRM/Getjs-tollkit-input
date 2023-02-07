@@ -2,7 +2,7 @@ import React from 'react'
 import FirstName from '../../components/FirstName'
 import LastName from '../../components/LastName'
 import { useDispatch } from 'react-redux'
-import { setFirstName } from '../userSlice'
+import { setFirstName,setLastName } from '../userSlice'
 const User = () => {
 
     const dispatch = useDispatch()
@@ -16,6 +16,8 @@ const User = () => {
             />
             <input
                 type='text'
+                onChange={(e)=>dispatch(setLastName(e.target.value))}
+
                 placeholder='Second Name'
                 className='w-full p-1 mb-2 focus:outline-none focus:border-lime-500 focus: border-2 placeholder:text-sm'
             />
