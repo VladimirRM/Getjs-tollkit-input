@@ -1,6 +1,6 @@
 import React from 'react'
-import FirstName from './FirstName'
-import LastName from './LastName'
+import FirstName from '../../components/FirstName'
+import LastName from '../../components/LastName'
 import { useDispatch } from 'react-redux'
 import { setFirstName } from '../userSlice'
 const User = () => {
