@@ -15,6 +15,6 @@ const initialState = {
 //             state.lastName=action.payload
 //         }
 //     }
-})
+// })
 // export const {setFirstName,setLastName} = userSlice.actions
 // export default userSlice.reducer
